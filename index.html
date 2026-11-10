@@ -936,6 +936,32 @@
     <!-- Model Grid -->
     <div class="model-grid" id="modelGrid">
       
+      <!-- aira-deepmind -->
+      <div class="model-card" data-category="reasoning">
+        <div>
+          <div class="card-top">
+            <div class="model-title-wrap">
+              <h4>🧠 aira-deepmind</h4>
+              <div class="model-category">flagship-deepmind // deep-reasoning-code-synthesis</div>
+            </div>
+            <span class="badge badge-primary">Primary DeepMind Flagship</span>
+          </div>
+          <p class="model-desc">
+            Ultra-deep reasoning & Claude 3.5 Sonnet / Gemini DeepMind-tier code synthesis engine. Powered by a 550B MoE neural backbone with multi-key swarm failover for production-grade full-stack architecture.
+          </p>
+          <div class="model-specs">
+            <div class="spec-item"><span class="label">Architecture</span><span class="value">550B MoE Swarm</span></div>
+            <div class="spec-item"><span class="label">Context Window</span><span class="value">128,000 tokens</span></div>
+            <div class="spec-item"><span class="label">Coding Quality</span><span class="value">Claude & Gemini Pro</span></div>
+            <div class="spec-item"><span class="label">Developer Pricing</span><span class="value">$0.00 / Zero-Cost</span></div>
+          </div>
+        </div>
+        <div class="card-actions">
+          <button class="btn btn-primary btn-sm" onclick="selectModelInPlayground('aira-deepmind')">Test in Playground</button>
+          <button class="btn btn-secondary btn-sm" onclick="copyModelName('aira-deepmind')">Copy ID</button>
+        </div>
+      </div>
+
       <!-- aira-sec -->
       <div class="model-card" data-category="cyber">
         <div>
@@ -1165,6 +1191,7 @@
         <div class="control-group">
           <label for="modelSelect">Select Model</label>
           <select id="modelSelect" class="control-select" onchange="syncModelSelection()">
+            <option value="aira-deepmind" selected>🧠 aira-deepmind (Primary DeepMind Flagship)</option>
             <option value="aira-sec">🛡️ aira-sec (Cyber Intelligence)</option>
             <option value="aira-core">⚡ aira-core (Bare-Metal SIMD)</option>
             <option value="aira-3-ultra">🧠 aira-3-ultra (Flagship Brain)</option>
